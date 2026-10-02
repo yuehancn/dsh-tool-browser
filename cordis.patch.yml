@@ -1,0 +1,20 @@
+# The dsh-tool-browser bundle patch: one insert adding the browser tool suite.
+#
+# Playwright is optional. Without it the tools still work, but they fetch pages
+# statically and their JavaScript never runs — browser_status will say so.
+#
+#   npm install playwright
+#   npx playwright install chromium
+#
+# Point it at a workspace and an output directory:
+#
+#   - id: tool-browser
+#     config:
+#       workDir: C:/Users/you/research
+#       outputDir: C:/Users/you/research/browser-output
+#       waitStrategy: domcontentloaded
+#       headless: true
+
+- insert:
+    - id: tool-browser
+      name: dsh-tool-browser
