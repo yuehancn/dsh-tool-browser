@@ -17,4 +17,4 @@
 
 - insert:
     - id: tool-browser
-      name: dsh-tool-browser
+      name: "@yuehancn/dsh-tool-browser"

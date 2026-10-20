@@ -67,7 +67,7 @@ console.log("browser: integration");
 	plugin.apply(ctx, ctx.config);
 	equal("disabling everything registers nothing", ctx.names().length, 0);
 }
-equal("the plugin name is the package name", plugin.name, "dsh-tool-browser");
+equal("the plugin name is the diagnostic label", plugin.name, "dsh-tool-browser");
 equal("the plugin injects the tools service", JSON.stringify(plugin.inject), JSON.stringify(["tools"]));
 {
 	const ctx = Context();

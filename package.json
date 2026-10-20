@@ -1,5 +1,5 @@
 {
-  "name": "dsh-tool-browser",
+  "name": "@yuehancn/dsh-tool-browser",
   "version": "1.0.0",
   "description": "Browser tools for DeepSeek Harness: open a page, wait for it the way it actually needs, pull out the readable article, and take a screenshot. Uses Playwright when it is installed and falls back to a static fetch that says so, so an unrendered page is never mistaken for an empty one.",
   "type": "module",
